@@ -13,7 +13,7 @@ class CategoryAdmin(admin.ModelAdmin):
 class SubcategoryAdmin(admin.ModelAdmin):
     list_display = ("pk", "title", "category")
     list_display_links = ("pk", "title")
-
+    prepopulated_fields = {"slug": ("title",)}
 
 class ProductImageInline(admin.TabularInline):
     model = ProductImage
@@ -24,6 +24,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = ("pk", "title", "price", "views", "quantity", "category")
     list_display_links = ("pk", "title")
     readonly_fields = ("views",)
+    prepopulated_fields = {"slug": ("title",)}
     list_filter = ("category",)
     inlines = [
         ProductImageInline
