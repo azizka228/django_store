@@ -1,7 +1,7 @@
 from django.db import models
 from django.template.defaultfilters import slugify
 from django.urls import reverse
-
+from accounts.models import CustomUser
 # Create your models here.
 
 class Category(models.Model):
@@ -91,18 +91,18 @@ class ProductImage(models.Model):
     photo = models.ImageField(verbose_name="Фото", upload_to="products/", null=True, blank=True, default=None)
     product = models.ForeignKey(Product,
                                 on_delete=models.CASCADE, verbose_name="Продукт")
-# CategoryModel
-    # title
-# SubCategotyModel
-    # title
-    # category_id
-# Product
-    # title
-    # description
-    # price
-    # views
-    # quantity
-    # product_type (new, sale, sold)
-# ProductImage
-    # photo
-    # product_id
+
+
+class Review(models.Model):
+    RATING_CHOCES = (
+        (1, 1),
+        (2, 2),
+        (3, 3),
+        (4, 4),
+        (5, 5),
+    )
+    author = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name="reviews")
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="reviews")
+    content = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    rating = models.IntegerField(choices=RATING_CHOCES, blank=True, null=True)
