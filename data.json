@@ -1,0 +1,258 @@
+[
+  {
+    "model": "pages.category",
+    "pk": 1,
+    "fields": {
+      "title": "электроника"
+    }
+  },
+  {
+    "model": "pages.category",
+    "pk": 2,
+    "fields": {
+      "title": "одежда"
+    }
+  },
+  {
+    "model": "pages.category",
+    "pk": 3,
+    "fields": {
+      "title": "красота"
+    }
+  },
+  {
+    "model": "pages.category",
+    "pk": 4,
+    "fields": {
+      "title": "здоровье"
+    }
+  },
+  {
+    "model": "pages.subcategory",
+    "pk": 1,
+    "fields": {
+      "title": "apple watch",
+      "slug": "apple-watch",
+      "category": 1
+    }
+  },
+  {
+    "model": "pages.subcategory",
+    "pk": 2,
+    "fields": {
+      "title": "кроссы",
+      "slug": "krossy",
+      "category": 2
+    }
+  },
+  {
+    "model": "pages.subcategory",
+    "pk": 3,
+    "fields": {
+      "title": "духи",
+      "slug": "duhi",
+      "category": 3
+    }
+  },
+  {
+    "model": "pages.subcategory",
+    "pk": 4,
+    "fields": {
+      "title": "уход косметика",
+      "slug": "uhod-kosmetika",
+      "category": 4
+    }
+  },
+  {
+    "model": "pages.subcategory",
+    "pk": 5,
+    "fields": {
+      "title": "iphone 13pro max",
+      "slug": "iphone-13pro-max",
+      "category": 1
+    }
+  },
+  {
+    "model": "pages.product",
+    "pk": 2,
+    "fields": {
+      "title": "iphone 13pro max",
+      "slug": "iphone-13pro-max",
+      "description": "самый классный телефон",
+      "price": 1000,
+      "quantity": 15,
+      "views": 0,
+      "product_type": "sale",
+      "subcategory": 5,
+      "category": 1
+    }
+  },
+  {
+    "model": "pages.product",
+    "pk": 3,
+    "fields": {
+      "title": "air jordan",
+      "slug": "air-jordan",
+      "description": "самые стильные кроссы",
+      "price": 200,
+      "quantity": 20,
+      "views": 0,
+      "product_type": "sold",
+      "subcategory": 2,
+      "category": 2
+    }
+  },
+  {
+    "model": "pages.product",
+    "pk": 4,
+    "fields": {
+      "title": "dior",
+      "slug": "dior",
+      "description": "самые классные духи",
+      "price": 170,
+      "quantity": 20,
+      "views": 0,
+      "product_type": "new",
+      "subcategory": 3,
+      "category": 3
+    }
+  },
+  {
+    "model": "pages.product",
+    "pk": 5,
+    "fields": {
+      "title": "chanel",
+      "slug": "chanel",
+      "description": "asdsdsadsadsa",
+      "price": 70,
+      "quantity": 10,
+      "views": 0,
+      "product_type": "new",
+      "subcategory": 4,
+      "category": 4
+    }
+  },
+  {
+    "model": "pages.product",
+    "pk": 6,
+    "fields": {
+      "title": "apple watch",
+      "slug": "apple-watch",
+      "description": "крутые часы",
+      "price": 400,
+      "quantity": 0,
+      "views": 0,
+      "product_type": "new",
+      "subcategory": 1,
+      "category": 1
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 4,
+    "fields": {
+      "photo": "products/Без_названия.jfif",
+      "product": 2
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 5,
+    "fields": {
+      "photo": "products/620aac66f6.jpg",
+      "product": 2
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 6,
+    "fields": {
+      "photo": "products/Без_названия_2.jfif",
+      "product": 3
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 7,
+    "fields": {
+      "photo": "products/Без_названия_3.jfif",
+      "product": 3
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 8,
+    "fields": {
+      "photo": "products/hover_1309019342_dior_sauvage_eau_de_parfum_100ml.jpg",
+      "product": 4
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 9,
+    "fields": {
+      "photo": "products/Без_названия_4.jfif",
+      "product": 5
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 10,
+    "fields": {
+      "photo": "products/Без_названия_ENueiHY.jfif",
+      "product": 6
+    }
+  },
+  {
+    "model": "pages.productimage",
+    "pk": 11,
+    "fields": {
+      "photo": "products/Apple-Fifth-Avenue-New-York-trying-Apple-Watch-Series-8-220916.jpg",
+      "product": 6
+    }
+  },
+  {
+    "model": "pages.review",
+    "pk": 1,
+    "fields": {
+      "author": null,
+      "product": 2,
+      "content": "adsadasdasda",
+      "created_at": "2023-05-08T13:19:38.198Z",
+      "rating": 5
+    }
+  },
+  {
+    "model": "pages.review",
+    "pk": 2,
+    "fields": {
+      "author": null,
+      "product": 2,
+      "content": "dadasdsadsaffff",
+      "created_at": "2023-05-08T13:19:58.787Z",
+      "rating": 3
+    }
+  },
+  {
+    "model": "pages.review",
+    "pk": 3,
+    "fields": {
+      "author": null,
+      "product": 2,
+      "content": "cool disayn",
+      "created_at": "2023-05-11T12:19:24.146Z",
+      "rating": 1
+    }
+  },
+  {
+    "model": "pages.review",
+    "pk": 4,
+    "fields": {
+      "author": null,
+      "product": 2,
+      "content": "dsadsadsadddddd",
+      "created_at": "2023-05-11T12:34:38.788Z",
+      "rating": 1
+    }
+  }
+]
